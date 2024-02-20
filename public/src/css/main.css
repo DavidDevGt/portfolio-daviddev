@@ -1,0 +1,70 @@
+body, h1, h2, h5, .nav-link {
+    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  #header .navbar-brand img {
+    height: 80px;
+    border-radius: 50%;
+  }
+
+  #header h5 {
+    font-size: 1.25rem;
+  }
+
+  #principal .btn-outline-light {
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+
+  #principal .btn-outline-light:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  #principal h1 {
+    font-size: 4rem;
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  #principal h2 {
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+  }
+
+  #principal h5 {
+    color: #ffffff;
+    margin-bottom: 2rem;
+  }
+
+  .navbar-toggler {
+    border-color: rgba(255,255,255,0.1);
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    color: #ffffff;
+  }
+
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #ffffff;
+    background-color: rgba(255,255,255,0.1);
+  }
+
+  .btn-primary, .btn-secondary {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  @media (max-width: 991px) {
+    #header .navbar-brand img {
+      height: 60px;
+    }
+
+    #principal h1 {
+      font-size: 2.5rem;
+    }
+  }
