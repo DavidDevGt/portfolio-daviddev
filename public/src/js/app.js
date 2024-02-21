@@ -34,18 +34,20 @@ document.addEventListener("DOMContentLoaded", function () {
   badges.forEach(function (badge) {
     let url = badge.getAttribute("data-url");
     if (url) {
-      // Crear un nuevo enlace
       let link = document.createElement("a");
       link.setAttribute("href", url);
       link.setAttribute("class", "badge-link");
       link.setAttribute("target", "_blank");
       
-      // Clonar el badge y agregarlo al enlace
       let badgeClone = badge.cloneNode(true);
       link.appendChild(badgeClone);
       
-      // Reemplazar el badge existente con el enlace que contiene el clon
       badge.replaceWith(link);
     }
+  });
+
+  let certificationLinks = document.querySelectorAll("#certifications .card-text a");
+  certificationLinks.forEach(function(link) {
+    link.setAttribute("target", "_blank");
   });
 });
