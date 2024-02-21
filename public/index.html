@@ -1,144 +1,593 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>David | Software Developer</title>
-    <!-- BOOTSTRAP -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <!-- ICONOS Y FUENTES -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>David | Software Developer</title>
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <!-- ICONOS Y FUENTES -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- ESTILOS CSS -->
-    <link rel="stylesheet" href="src/css/main.css" />
-  </head>
-  <body class="bg-dark text-white">
-    <header id="header">
-      <nav
-        class="navbar navbar-expand-lg navbar-dark bg-dark padding-small px-lg-4"
-      >
-        <div class="container">
-          <a class="navbar-brand d-flex align-items-center" href="#principal">
-            <img
-              src="src/img/io.jpg"
-              alt="David"
-              class="rounded-circle"
-              style="width: 48px; height: 48px; object-fit: cover"
-            />
-            <div class="ms-2">
-              <h5 class="mb-0" style="line-height: 1">David Vargas</h5>
-              <p class="mb-0" style="font-size: 0.8rem">Software Developer</p>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <!-- ESTILOS CSS -->
+  <link rel="stylesheet" href="src/css/main.css" />
+</head>
+
+<body class="bg-dark text-white">
+  <header id="header">
+    <nav class="navbar navbar-expand-lg navbar-dark padding-small px-lg-4 sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#principal">
+          <img src="src/img/io.jpg" alt="David" class="rounded-circle"
+            style="width: 48px; height: 48px; object-fit: cover" />
+          <div class="ms-2">
+            <h5 class="mb-0" style="line-height: 1">David Vargas</h5>
+            <p class="mb-0" style="font-size: 0.8rem">Software Developer</p>
+          </div>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu"
+          aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#principal">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Sobre mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certifications">Certificaciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div id="principal" class="py-5 mb-5">
+    <div class="container text-center">
+      <a href="src/pdf/Cv_David_2024.pdf" class="btn btn-outline-light mt-5"><i class="bi bi-file-earmark-arrow-down"></i> Descargar CV</a>
+      <h2 class="fw-light mt-5">Software Developer</h2>
+      <h1 class="fw-bold mt-3">David Vargas</h1>
+      <h5 class="mt-3">Full Stack Javascript & PHP</h5>
+      <div class="mt-4">
+        <a href="https://www.linkedin.com/in/jdavidvl/" target="_blank" class="btn btn-lg btn-primary me-2">LinkedIn <i
+            class="bi bi-arrow-right"></i></a>
+        <a href="https://github.com/DavidDevGt" target="_blank" class="btn btn-lg btn-secondary">GitHub <i
+            class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="mt-5 mb-5">
+        <i style="font-size: 1.65rem; margin: 0.25rem" class="devicon-vuejs-plain colored"></i>
+        <i style="font-size: 1.65rem; margin: 0.25rem" class="devicon-javascript-plain colored"></i>
+        <i style="font-size: 1.65rem; margin: 0.25rem" class="devicon-nodejs-plain colored"></i>
+        <i style="font-size: 1.65rem; margin: 0.25rem" class="devicon-php-plain colored"></i>
+        <i style="font-size: 1.65rem; margin: 0.25rem" class="devicon-laravel-original colored"></i>
+        <i style="font-size: 1.65rem; margin: 0.25rem" class="devicon-mysql-original colored"></i>
+        <i style="font-size: 1.65rem; margin: 0.25rem" class="devicon-git-plain colored"></i>
+        <i style="font-size: 1.65rem; margin: 0.25rem" class="devicon-digitalocean-plain colored"></i>
+      </div>
+    </div>
+  </div>
+
+  <div id="projects" class="py-5">
+    <div class="container">
+      <div class="text-start mb-3">
+        <h5 class="h5 text-uppercase fw-bold text-primary">Proyectos</h5>
+        <h4 class="h4 text-light">Mis proyectos destacados</h4>
+      </div>
+      <div class="btn-group mb-4" role="group" aria-label="Filtro de proyectos">
+        <button type="button" class="btn btn-outline-light filter-btn" data-filter="all">Todos</button>
+        <button type="button" class="btn btn-outline-light filter-btn" data-filter="fullstack">Full Stack</button>
+        <button type="button" class="btn btn-outline-light filter-btn" data-filter="frontend">Frontend</button>
+        <button type="button" class="btn btn-outline-light filter-btn" data-filter="backend">Backend</button>
+      </div>
+      
+      <div class="row mt-3 mb-4" id="projectsContainer">
+        <!-- Tarjeta de proyecto 1 -->
+        <div class="col-lg-12 mb-3 project-card fullstack">
+          <div class="card bg-dark text-white h-100">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <img src="./src/img/money-tracker.png" class="card-img-top h-100" alt="Proyecto" />
+              </div>
+              <div class="col-md-6 d-flex flex-column">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <div>
+                    <h4 class="fw-bold text-primary text-uppercase" id="techStack">
+                      Fullstack
+                    </h4>
+                    <h5 class="card-title">Money Tracker</h5>
+                    <p class="card-text">
+                      Es una aplicación web para llevar el control de tus
+                      gastos e ingresos de una forma sencilla y rápida.
+                    </p>
+                  </div>
+                  <div>
+                    <div class="my-2">
+                      <span class="badge bg-primary"><i class="bi bi-github"></i> Frontend</span>
+                      <span class="badge bg-primary"><i class="bi bi-github"></i> Backend</span>
+                    </div>
+                    <div class="my-2">
+                      <span class="badge bg-secondary">Vue</span>
+                      <span class="badge bg-secondary">PHP</span>
+                      <span class="badge bg-secondary">MySQL</span>
+                      <span class="badge bg-secondary">JWT</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </a>
-
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbar-menu"
-            aria-controls="navbar-menu"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbar-menu">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#principal">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">Proyectos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">Sobre mi</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#certifications">Certificaciones</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills</a>
-              </li>
-            </ul>
           </div>
         </div>
-      </nav>
-    </header>
-
-    <div id="principal" class="py-5">
-      <div class="container text-center">
-        <a href="#" class="btn btn-outline-light mt-5"><i class="bi bi-file-earmark-arrow-down"></i> Descargar CV</a>
-        <h2 class="fw-light mt-5">Software Developer</h2>
-        <h1 class="fw-bold mt-3">David Vargas</h1>
-        <h5 class="mt-3">Full Stack Javascript & PHP</h5>
-        <div class="mt-4">
-          <a
-            href="https://www.linkedin.com/in/jdavidvl/"
-            target="_blank"
-            class="btn btn-lg btn-primary me-2"
-            >LinkedIn</a
-          >
-          <a
-            href="https://github.com/DavidDevGt"
-            target="_blank"
-            class="btn btn-lg btn-secondary"
-            >GitHub</a
-          >
+        <!-- Tarjeta de proyecto 2 -->
+        <div class="col-lg-12 mt-2 mb-3 project-card fullstack">
+          <div class="card bg-dark text-white h-100">
+            <div class="row g-0">
+              <div class="col-md-6 d-flex flex-column">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <div>
+                    <h4 class="fw-bold text-primary text-uppercase" id="techStack">
+                      Fullstack
+                    </h4>
+                    <h5 class="card-title">Min.URL</h5>
+                    <p class="card-text">
+                      Esta app te permite acortar tus URLs de una forma rápida
+                      y sencilla, con una interfaz limpia y amigable para
+                      todos los usuarios.
+                    </p>
+                  </div>
+                  <div>
+                    <div class="my-2">
+                      <span class="badge bg-primary"><i class="bi bi-github"></i> Código</span>
+                    </div>
+                    <div class="my-2">
+                      <span class="badge bg-secondary">Vue</span>
+                      <span class="badge bg-secondary">NodeJS</span>
+                      <span class="badge bg-secondary">Express</span>
+                      <span class="badge bg-secondary">Axios</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img src="./src/img/minurl.png" class="card-img-top h-100" alt="Proyecto" />
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="mt-5">
-          <i
-            style="font-size: 1.65rem; margin: 0.25rem"
-            class="devicon-vuejs-plain colored"
-          ></i>
-          <i
-            style="font-size: 1.65rem; margin: 0.25rem"
-            class="devicon-javascript-plain colored"
-          ></i>
-          <i
-            style="font-size: 1.65rem; margin: 0.25rem"
-            class="devicon-nodejs-plain colored"
-          ></i>
-          <i
-            style="font-size: 1.65rem; margin: 0.25rem"
-            class="devicon-php-plain colored"
-          ></i>
-          <i
-            style="font-size: 1.65rem; margin: 0.25rem"
-            class="devicon-laravel-original colored"
-          ></i>
-          <i
-            style="font-size: 1.65rem; margin: 0.25rem"
-            class="devicon-mysql-original colored"
-          ></i>
+        <!-- Tarjeta de proyecto 3 -->
+        <div class="col-lg-12 mb-3 project-card frontend">
+          <div class="card bg-dark text-white h-100">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <img src="./src/img/json-view-edit.png" class="card-img-top h-100" alt="Proyecto" />
+              </div>
+              <div class="col-md-6 d-flex flex-column">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <div>
+                    <h4 class="fw-bold text-primary text-uppercase" id="techStack">
+                      Frontend
+                    </h4>
+                    <h5 class="card-title">Json Viewer & Editor</h5>
+                    <p class="card-text">
+                      Esta aplicación web te permite visualizar y editar tus
+                      JSON, además de otras funcionalidades como minimizar y
+                      formatear.
+                    </p>
+                  </div>
+                  <div>
+                    <div class="my-2">
+                      <span class="badge bg-primary"><i class="bi bi-github"></i> Código</span>
+                      <span class="badge bg-primary"><i class="bi bi-box-arrow-up-right"></i> Live
+                        Demo</span>
+                    </div>
+                    <div class="my-2">
+                      <span class="badge bg-secondary">HTML</span>
+                      <span class="badge bg-secondary">CSS</span>
+                      <span class="badge bg-secondary">Vue</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta de proyecto 4 -->
+        <div class="col-lg-12 mb-3 project-card frontend">
+          <div class="card bg-dark text-white h-100">
+            <div class="row g-0">
+              <div class="col-md-6 d-flex flex-column">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <div>
+                    <h4 class="fw-bold text-primary text-uppercase" id="techStack">
+                      Frontend
+                    </h4>
+                    <h5 class="card-title">
+                      Computer Vision con Transformers.js
+                    </h5>
+                    <p class="card-text">
+                      En esta app puedes subir cualquier imagen y la IA
+                      detectará los objetos que aparecen en ella, con una
+                      precisión del 90%. (Aprox.)
+                    </p>
+                  </div>
+                  <div>
+                    <div class="my-2">
+                      <span class="badge bg-primary"><i class="bi bi-github"></i> Código</span>
+                      <span class="badge bg-primary"><i class="bi bi-box-arrow-up-right"></i> Live
+                        Demo</span>
+                    </div>
+                    <div class="my-2">
+                      <span class="badge bg-secondary">HTML</span>
+                      <span class="badge bg-secondary">CSS</span>
+                      <span class="badge bg-secondary">Javascript</span>
+                      <span class="badge bg-secondary">Transformers.js</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img src="./src/img/vision-transformers.png" class="card-img-top h-100" alt="Proyecto" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta de proyecto 5 -->
+        <div class="col-lg-12 mb-3 project-card frontend">
+          <div class="card bg-dark text-white h-100">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <img src="./src/img/animeflix.png" class="card-img-top h-100" alt="Proyecto" />
+              </div>
+              <div class="col-md-6 d-flex flex-column">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <div>
+                    <h4 class="fw-bold text-primary text-uppercase" id="techStack">
+                      Frontend
+                    </h4>
+                    <h5 class="card-title">AnimeFlix</h5>
+                    <p class="card-text">
+                      Esta aplicación web es un directorio de animes, puedes
+                      ver la información de cada anime, cantidad de episodios
+                      y la valoración de la comunidad.
+                    </p>
+                  </div>
+                  <div>
+                    <div class="my-2">
+                      <span class="badge bg-primary"><i class="bi bi-github"></i> Código</span>
+                      <span class="badge bg-primary"><i class="bi bi-box-arrow-up-right"></i> Live
+                        Demo</span>
+                    </div>
+                    <div class="my-2">
+                      <span class="badge bg-secondary">Next.js</span>
+                      <span class="badge bg-secondary">React</span>
+                      <span class="badge bg-secondary">Framer Motion</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta de proyecto 6 -->
+        <div class="col-lg-12 mb-3 project-card backend">
+          <div class="card bg-dark text-white h-100">
+            <div class="row g-0">
+              <div class="col-md-6 d-flex flex-column">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <div>
+                    <h4 class="fw-bold text-primary text-uppercase" id="techStack">
+                      Backend
+                    </h4>
+                    <h5 class="card-title">
+                      Storage PDF
+                    </h5>
+                    <p class="card-text">
+                      Esta solución la desarrollé para una empresa que necesitaba almacenar
+                      los PDFs de sus clientes de una forma segura y registrando la información en una base de datos.
+                    </p>
+                  </div>
+                  <div>
+                    <div class="my-2">
+                      <span class="badge bg-primary"><i class="bi bi-github"></i> Código</span>
+                    </div>
+                    <div class="my-2">
+                      <span class="badge bg-secondary">Linux</span>
+                      <span class="badge bg-secondary">PHP</span>
+                      <span class="badge bg-secondary">MySQL</span>
+                      <span class="badge bg-secondary">MVC</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img src="./src/img/php_pdf.png" class="card-img-top h-100" alt="Proyecto" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta de proyecto 7 -->
+        <div class="col-lg-12 mb-3 project-card backend">
+          <div class="card bg-dark text-white h-100">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <img src="./src/img/cuchubal-backend.png" class="card-img-top h-100" alt="Proyecto" />
+              </div>
+              <div class="col-md-6 d-flex flex-column">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <div>
+                    <h4 class="fw-bold text-primary text-uppercase" id="techStack">
+                      Backend
+                    </h4>
+                    <h5 class="card-title">Cuchubal App</h5>
+                    <p class="card-text">
+                      Esta aplicación funciona para llevar el control de los pagos y participantes
+                      de un cuchubal, una actividad que hace la comunidad para recaudar fondos. Muy
+                      común en Guatemala.
+                    </p>
+                  </div>
+                  <div>
+                    <div class="my-2">
+                      <span class="badge bg-primary"><i class="bi bi-github"></i> Código</span></div>
+                      <div class="my-2">
+                        <span class="badge bg-secondary">PHP</span>
+                        <span class="badge bg-secondary">MySQL</span>
+                        <span class="badge bg-secondary">API</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div id="projects" class="py-5">
-        <div class="container"></div>
+    <div id="about" class="py-5 bg-dark">
+      <div class="container">
+        <div class="row mb-3 align-items-center">
+          <div class="col-md-5">
+            <h5 class="text-uppercase fw-bold text-primary">Sobre Mi</h5>
+            <h4 class="mt-3 text-light">David Vargas</h4>
+            <p class="mt-5 text-light">
+              Desarrollador de software especializado en aplicaciones web Fullstack con PHP, Javascript y MySQL.
+              <br><br>
+              Estudiante de Ingeniería en Sistemas, apasionado por la programación web y la arquitectura de sistemas.
+              <br><br>
+              Actualmente tengo 22 años y resido en Guatemala.
+            </p>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-6">
+            <div class="card bg-secondary text-white h-100">
+              <div class="card-body">
+                <h5 class="card-title">Técnico en Desarrollo de Software</h5>
+                <p class="card-text">Título de Técnico en Desarrollo de Software de la Universidad Galileo.</p>
+                <p class="card-text"><small class="text-light">Gen. 2023-2024</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+
+    <div id="certifications" class="py-5">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-md-12">
+            <h5 class="text-uppercase fw-bold text-primary">Certificaciones</h5>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Certificación 1 -->
+          <div class="col-md-6 mb-4">
+            <div class="card certification-card bg-secondary text-white">
+              <div class="card-body">
+                <h6 class="card-title">Administración de Servidores</h6>
+                <p class="card-text">
+                  <a href="https://platzi.com/p/daviddevgt/ruta/8350-cloud-servidores/diploma/detalle/"
+                    class="text-light certification-link stretched-link">Certificado de aprobación de 'Administración de
+                    Servidores'. <i class="bi bi-box-arrow-up-right"></i></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Certificación 2 -->
+          <div class="col-md-6 mb-4">
+            <div class="card certification-card bg-secondary text-white">
+              <div class="card-body">
+                <h6 class="card-title">Digital Ocean</h6>
+                <p class="card-text">
+                  <a href="https://platzi.com/p/daviddevgt/curso/1653-digital-ocean/diploma/detalle/"
+                    class="text-light certification-link stretched-link">Certificado de aprobación de 'Digital Ocean'.
+                    <i class="bi bi-box-arrow-up-right"></i></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Certificación 3 -->
+          <div class="col-md-6 mb-4">
+            <div class="card certification-card bg-secondary text-white">
+              <div class="card-body">
+                <h6 class="card-title">Inteligencia Artificial para Developers</h6>
+                <p class="card-text">
+                  <a href="https://platzi.com/p/daviddevgt/curso/7964-ia-devs/diploma/detalle/"
+                    class="text-light certification-link stretched-link">Certificado de aprobación de 'Herramientas de Inteligencia Artificial para Developers'.
+                    <i class="bi bi-box-arrow-up-right"></i></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Certificación 4 -->
+          <div class="col-md-6 mb-4">
+            <div class="card certification-card bg-secondary text-white">
+              <div class="card-body">
+                <h6 class="card-title">Programación Orientada a Objetos en PHP</h6>
+                <p class="card-text">
+                  <a href="https://platzi.com/p/daviddevgt/curso/2034-php-poo/diploma/detalle/"
+                    class="text-light certification-link stretched-link">Certificado de aprobación de 'Programación Orientada a Objetos en PHP'.
+                    <i class="bi bi-box-arrow-up-right"></i></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Certificación 5 -->
+          <div class="col-md-6 mb-4">
+            <div class="card certification-card bg-secondary text-white">
+              <div class="card-body">
+                <h6 class="card-title">Entornos de Desarrollo y Deployment en WordPress</h6>
+                <p class="card-text">
+                  <a href="https://platzi.com/p/daviddevgt/curso/2602-desarrollo-wordpress/diploma/detalle/"
+                    class="text-light certification-link stretched-link">Certificado de aprobación de 'Entornos de Desarrollo y Deployment en WordPress'.
+                    <i class="bi bi-box-arrow-up-right"></i></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Certificación 6 -->
+          <div class="col-md-6 mb-4">
+            <div class="card certification-card bg-secondary text-white">
+              <div class="card-body">
+                <h6 class="card-title">Fundamentos de IA para Data y Machine Learning</h6>
+                <p class="card-text">
+                  <a href="https://platzi.com/p/daviddevgt/curso/6935-ia-data-ml/diploma/detalle/"
+                    class="text-light certification-link stretched-link">Certificado de aprobación de 'Fundamentos de IA para Data y Machine Learning'.
+                    <i class="bi bi-box-arrow-up-right"></i></a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="skills" class="py-5 bg-dark">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-md-12">
+            <h5 class="text-uppercase fw-bold text-primary">Skills</h5>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Skill 1 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="skill-card bg-secondary text-white text-center py-3">
+              Vue.js
+            </div>
+          </div>
+          <!-- Skill 2 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="skill-card bg-secondary text-white text-center py-3">
+              Laravel
+            </div>
+          </div>
+          <!-- Skill 3 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="skill-card bg-secondary text-white text-center py-3">
+              HTML
+            </div>
+          </div>
+          <!-- Skill 4 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="skill-card bg-secondary text-white text-center py-3">
+              CSS
+            </div>
+          </div>
+          <!-- Skill 5 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="skill-card bg-secondary text-white text-center py-3">
+              PHP
+            </div>
+          </div>
+          <!-- Skill 6 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="skill-card bg-secondary text-white text-center py-3">
+              Javascript
+            </div>
+          </div>
+          <!-- Skill 7 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="skill-card bg-secondary text-white text-center py-3">
+              Linux
+            </div>
+          </div>
+          <!-- Skill 8 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="skill-card bg-secondary text-white text-center py-3">
+              MySQL
+            </div>
+          </div>
+          <!-- Skill 9 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="skill-card bg-secondary text-white text-center py-3">
+              Node.js
+            </div>
+          </div>
+          <!-- Skill 10 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="skill-card bg-secondary text-white text-center py-3">
+              Express
+            </div>
+          </div>
+          <!-- Skill 11 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="skill-card bg-secondary text-white text-center py-3">
+              DigitalOcean
+            </div>
+          </div>
+          <!-- Skill 12 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="skill-card bg-secondary text-white text-center py-3">
+              TypeScript
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <footer id="footer" class=" py-3 text-light">
+      <div class="container mt-3">
+        <div class="row mb-3">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-0">Developed by David Vargas</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a href="https://www.linkedin.com/in/jdavidvl/" class="text-secondary mx-2">
+              <i class="devicon-linkedin-plain"></i>
+            </a>
+            <a href="https://github.com/DavidDevGt" class="text-secondary mx-2">
+              <i class="devicon-github-original"></i>
+            </a>
+            <a href="https://www.behance.net/daviddevgt" class="text-secondary mx-2">
+              <i class="devicon-behance-plain"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      crossorigin="anonymous"></script>
+      <script src="./src/js/app.js"></script>
+</body>
+
 </html>
