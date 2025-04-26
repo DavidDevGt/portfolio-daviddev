@@ -145,7 +145,17 @@ img {
   font-weight: 700;
   letter-spacing: 1px;
   font-size: 1.15rem;
-  color: var(--primary-light, #0d6efd);
+  color: var(--text-primary);
+}
+#header .navbar-brand h5 {
+  color: var(--text-primary);
+  margin-bottom: 0;
+  font-weight: 700;
+}
+#header .navbar-brand p {
+  color: var(--text-secondary);
+  margin-bottom: 0;
+  font-size: 0.8rem;
 }
 #header .navbar-brand img {
   border: 2px solid var(--border-medium);
@@ -226,16 +236,49 @@ img {
   padding: 1.5rem;
 }
 
-#certifications .card-title, #certifications .certification-title {
+#certifications {
+  background-color: var(--bg-section-alt);
+  padding: 5rem 0;
+}
+#certifications h5.text-uppercase {
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 2rem;
+  color: var(--bs-primary);
+}
+#certifications .certification-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  color: var(--text-primary);
+}
+#certifications .certification-card .card-body {
+  background: transparent;
+  color: var(--text-primary);
+}
+#certifications .certification-title, #certifications .card-title {
   color: var(--text-primary) !important;
 }
-#certifications .card-text, #certifications .certification-issuer, #certifications .certification-date {
+#certifications .certification-issuer, #certifications .certification-date, #certifications .card-text {
   color: var(--text-secondary);
+}
+#certifications .certification-link {
+  color: var(--bs-primary);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+#certifications .certification-link:hover {
+  color: var(--bs-primary-hover);
+  transform: translateX(5px);
 }
 
 /* --- PROYECTOS --- */
 #projects {
-  background-color: var(--bg-page);
+  background-color: var(--bg-section-alt);
   padding: 5rem 0;
 }
 
@@ -323,8 +366,7 @@ img {
 
 /* --- SECCIÓN DE ACERCA DE --- */
 #about {
-  background-color: var(--bg-section-alt);
-  padding: 5rem 0;
+  background-color: var(--bg-page);
 }
 
 #about h5.text-uppercase {
@@ -370,81 +412,9 @@ img {
   color: var(--text-secondary);
 }
 
-/* --- SECCIÓN DE CERTIFICACIONES --- */
-#certifications {
-  background-color: var(--bg-page);
-  padding: 5rem 0;
-}
-
-#certifications h5.text-uppercase {
-  font-size: 0.875rem;
-  letter-spacing: 0.1em;
-  margin-bottom: 2rem;
-  color: var(--bs-primary);
-}
-
-#certifications .certification-card {
-  background-color: var(--bg-card);
-  border: 1px solid var(--border-light);
-  border-radius: 0.5rem;
-  overflow: hidden;
-  box-shadow: var(--shadow-card);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 100%;
-  margin-bottom: 2rem;
-}
-
-#certifications .certification-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
-  border-color: var(--bs-primary);
-}
-
-#certifications .certification-img {
-  height: 150px;
-  object-fit: cover;
-  border-bottom: 1px solid var(--border-light);
-}
-
-#certifications .certification-body {
-  padding: 1.5rem;
-}
-
-#certifications .certification-title {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--text-primary) !important;
-  margin-bottom: 0.5rem;
-}
-
-#certifications .certification-issuer {
-  font-size: 0.875rem;
-  color: var(--text-secondary);
-  margin-bottom: 1rem;
-}
-
-#certifications .certification-date {
-  font-size: 0.8125rem;
-  color: var(--text-muted);
-  margin-bottom: 1.5rem;
-}
-
-#certifications .certification-link {
-  display: inline-block;
-  color: var(--bs-primary);
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-#certifications .certification-link:hover {
-  color: var(--bs-primary-hover);
-  transform: translateX(5px);
-}
-
 /* --- SECCIÓN DE HABILIDADES --- */
 #skills {
-  background-color: var(--bg-section-alt);
-  padding: 5rem 0;
+  background-color: var(--bg-page) !important;
 }
 
 #skills h5.text-uppercase {
@@ -685,4 +655,12 @@ body[data-theme="light"] #projects .filter-btn:hover {
   color: #fff;
   background: var(--bs-primary);
   border-color: var(--bs-primary);
+}
+
+#principal {
+  min-height:95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--bg-page);
 }
