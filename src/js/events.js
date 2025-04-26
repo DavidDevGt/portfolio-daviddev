@@ -1,11 +1,18 @@
+/**
+ * events.js - Event listeners for the portfolio website
+ * @module events
+ * @author DavidDevGt
+ */
+
 import { generateProjects, generateCertifications, generateSkills } from './dom.js';
-import { convertBadgesToLinks } from './utils.js';
+import { convertBadgesToLinks, setupDarkModeToggle } from './utils.js';
 
 document.addEventListener("DOMContentLoaded", function () {
   generateProjects();
   generateCertifications();
   generateSkills();
 
+  // Smooth scroll y filtros siguen igual
   const scrollLinks = document.querySelectorAll(".nav-link");
   for (let i = 0; i < scrollLinks.length; i++) {
     scrollLinks[i].addEventListener("click", function (event) {
@@ -24,7 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Filtrar proyectos
   const filterButtons = document.querySelectorAll(".filter-btn");
   filterButtons.forEach(function (btn) {
     btn.addEventListener("click", function () {
@@ -43,4 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   setTimeout(convertBadgesToLinks, 100);
+
+  // DARK/LIGHT MODE TOGGLE
+  setupDarkModeToggle('.dark-mode-toggle', 'dark-mode');
 });

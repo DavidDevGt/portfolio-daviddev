@@ -1,3 +1,9 @@
+/**
+ * data.js - Data for the portfolio website
+ * @module data
+ * @author DavidDevGt
+ */
+
 const projects = [
   {
     title: "Money Tracker",
