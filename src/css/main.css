@@ -34,8 +34,9 @@ h5,
 }
 
 .badge {
-  transform: scale(1.08);
+  transform: scale(0.95);
   font-weight: 500;
+  
 }
 
 /* CSS DE LA APP */
@@ -148,11 +149,6 @@ h5,
 
 #projects .card-text {
   font-size: 1rem;
-}
-
-#projects .badge {
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 
 #projects .btn-group .btn {
